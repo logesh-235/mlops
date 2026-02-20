@@ -14,7 +14,7 @@ from minio import Minio
 import mlflow
 import mlflow.sklearn
 import datetime
-from zoneinfo import ZoneInfo
+from backports.zoneinfo import ZoneInfo
 
 os.environ["MLFLOW_TRACKING_URI"] = "http://192.168.0.36:5000"
 os.environ["MLFLOW_S3_ENDPOINT_URL"] = "http://192.168.0.36:9000"
