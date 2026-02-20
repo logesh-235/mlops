@@ -8,7 +8,7 @@ on:
         type: string
 
 jobs:
-  load_dataset:
+  build:
     runs-on: self-hosted
     steps:
       - name: Log the Trigger
@@ -25,11 +25,8 @@ jobs:
           mkdir dataset
           python3 -m src.data.loader
 
-      - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v6.0.0
-        with:
-          name: raw_dataset
-          path: dataset/dataset.csv
+      - name: Preprocess
+        run: python3 -m src.data.loader
 
       
 
