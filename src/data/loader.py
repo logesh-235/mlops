@@ -23,5 +23,5 @@ for obj in getObjects:
         latest_time = obj.last_modified
         latest_file = obj.object_name
 data = pd.read_csv(client.get_object(bucket_name, latest_file))
-data.to_csv("dataset.csv", index=False)
+data.to_csv("dataset/dataset.csv", index=False)
 logger.info("Dataset loaded from Minio successfully.")
