@@ -5,3 +5,4 @@ minio
 scikit-learn
 mlflow
 xgboost
+backports.zoneinfo
