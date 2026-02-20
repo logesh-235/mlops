@@ -22,3 +22,6 @@ jobs:
 
       - name: Load Dataset
         run: python3 -m src.data.loader.py
+
+      - name: List
+        run: ls src/data
