@@ -30,5 +30,8 @@ jobs:
       - name: Preprocess
         run: python3 -m src.data.preprocess
 
+      - name: Train Data
+        run:  python -m src.ml.train
+
       
 
