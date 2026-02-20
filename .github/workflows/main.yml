@@ -18,4 +18,4 @@ jobs:
         uses: actions/checkout@v6.0.2
 
       - name: Load Dataset
-        run: python3 src.data.loader.py
+        run: python3 -m src.data.loader.py
