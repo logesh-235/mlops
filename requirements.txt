@@ -3,3 +3,6 @@ pandas
 kaggle
 minio
 scikit-learn
+mlflow
+zoneinfo
+xgboost
