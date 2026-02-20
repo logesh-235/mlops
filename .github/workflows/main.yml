@@ -33,5 +33,12 @@ jobs:
       - name: Train Data
         run:  python3 -m src.ml.train
 
+  deploy:
+    runs-on: self-hosted
+    needs: build
+    steps:
+      - name: Evalute Model
+        run: python3 -m src.ml.evaluate
+
       
 
