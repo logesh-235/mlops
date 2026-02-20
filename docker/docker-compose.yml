@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  github-actions-runner:
+    image: myoung34/github-runner:latest
+    container_name: github-actions-runner
+    environment:
+      - REPO_URL=https://github.com/logesh-235/mlops
+      - RUNNER_NAME=mlops-runner
+      - RUNNER_TOKEN=B3LGB6SHPNYWZQYOMPQZ7ILJTAEA2
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: unless-stopped
+

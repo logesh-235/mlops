@@ -1,0 +1,15 @@
+name: Webhook-Trigger
+on: 
+  workflow_dispatch:
+    inputs:
+      name:
+        required: false
+        description: Name
+        type: string
+
+jobs:
+  trigger:
+    runs-on: self-hosted
+    steps:
+      - name: Log the Trigger
+        run: echo "Workflow Triggered through webhook"

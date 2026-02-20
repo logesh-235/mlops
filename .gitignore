@@ -1,0 +1,17 @@
+#Ignore Pycache from all directories
+__pycache__/
+#Ignore log files
+*.log
+#Ignore MLflow artifacts
+mlruns/
+#Ignore Datasets
+dataset/
+
+.env
+
+# How to copy all files from this folder without pycache
+# You can use the following command in your terminal to copy all files from the current directory to another location while excluding the __pycache__ directories:
+# For Linux/Mac:
+# rsync -av --exclude='__pycache__' /path/to/source/ /path/to/destination/
+# For Windows (using PowerShell):
+# robocopy C:\path\to\source C:\path\to\destination /E /XD __pycache__  
