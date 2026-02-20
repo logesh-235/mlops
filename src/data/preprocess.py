@@ -6,6 +6,7 @@ import pandas as pd
 
 data = pd.read_csv("dataset/dataset.csv")
 data = data.dropna()  # Handle missing values
+print(data.head())
 
 # Encode categorical variables
 label_encoder = LabelEncoder()
