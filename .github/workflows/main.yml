@@ -22,7 +22,7 @@ jobs:
 
       - name: Load Dataset
         run: |
-          mkdir datasets
+          mkdir dataset
           ls
           python3 -m src.data.loader
           ls
