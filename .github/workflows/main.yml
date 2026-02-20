@@ -13,3 +13,9 @@ jobs:
     steps:
       - name: Log the Trigger
         run: echo "Workflow Triggered through webhook"
+
+      - name: Checkout
+        uses: actions/checkout@v6.0.2
+
+      - name: Load Dataset
+        run: python3 src.data.loader.py
