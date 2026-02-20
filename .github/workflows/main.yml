@@ -21,7 +21,7 @@ jobs:
         run:  pip install -r requirements.txt
 
       - name: Load Dataset
-        run: python3 -m src.data.loader.py
+        run: python3 -m src.data.loader
 
       - name: List
         run: ls src/data
